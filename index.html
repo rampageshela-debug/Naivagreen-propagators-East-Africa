@@ -3,93 +3,253 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Naivagreen Propagator Ltd | Certified Seedlings Kenya</title>
-
-<meta name="description" content="Naivagreen Propagator Ltd supplies certified seedlings, greenhouse solutions and agricultural consultancy services in Naivasha, Kenya and across East Africa.">
-<meta name="keywords" content="Seedlings Kenya, Naivasha seedlings, Tomato seedlings Kenya, Tree seedlings Naivasha, Certified seedlings Kenya">
-<meta name="author" content="Naivagreen Propagator Ltd">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Naivagreen Propagator Ltd</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#f4f9f4;color:#333;}
-header{background:#1b5e20;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;color:white;}
-nav a{color:white;text-decoration:none;margin-left:20px;}
-.hero{background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;height:90vh;display:flex;justify-content:center;align-items:center;text-align:center;color:white;padding:20px;}
-.hero h1{font-size:40px;margin-bottom:15px;}
-.btn{background:#2e7d32;padding:12px 25px;color:white;text-decoration:none;border-radius:5px;display:inline-block;margin-top:15px;}
-.section{padding:60px 10%;text-align:center;}
-.section h2{color:#1b5e20;margin-bottom:20px;}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px;}
-.card{background:white;padding:25px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
-iframe{width:100%;height:300px;border-radius:10px;margin-top:20px;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:15px;border-radius:50%;text-decoration:none;color:white;font-weight:bold;}
-footer{background:#1b5e20;color:white;text-align:center;padding:20px;}
-@media(max-width:768px){.hero h1{font-size:28px;}}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f9f4;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero img.active {
+    opacity: 1;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.btn {
+    display: block;
+    background: #2e7d32;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+}
+
+th {
+    background: #2e7d32;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h2>NAIVAGREEN PROPAGATOR LTD</h2>
-<nav>
-<a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</nav>
+<h1>NAIVAGREEN PROPAGATOR LTD</h1>
+<p>Nyondia, Naivasha | 0729 526 873</p>
 </header>
 
-<section class="hero">
-<div>
-<h1>Certified Quality Seedlings in Naivasha, Kenya</h1>
-<p>Growing Quality for East Africa 🌿</p>
-<a href="#products" class="btn">Order Seedlings</a>
+<!-- HERO -->
+<div class="hero">
+<img src="images/spinach-greenhouse-1.jpg" class="active">
+<img src="images/spinach-greenhouse-2.jpg">
+<img src="images/spinach-production.jpg">
+</div>
+
+<!-- PRODUCT -->
+<section class="section">
+<h2>Spinach Ford Hook Giant Seedlings</h2>
+
+<div class="card">
+<img src="images/spinach-greenhouse-1.jpg">
+
+<p><strong>Strong • Healthy • Ready for Transplant</strong></p>
+
+<p>
+✔ Large dark green leaves<br>
+✔ Fast growing & high yield<br>
+✔ Greenhouse & open field suitable<br>
+✔ Strict quality control
+</p>
+
+<a href="https://wa.me/254729526873" class="btn">Order via WhatsApp</a>
 </div>
 </section>
 
-<section id="products" class="section">
-<h2>Our Seedlings</h2>
-<div class="products">
+<!-- PRICING -->
+<section class="section">
+<h2>Pricing</h2>
+
+<table>
+<tr>
+<th>Quantity</th>
+<th>Price (KES)</th>
+</tr>
+<tr>
+<td>100 Seedlings</td>
+<td>500</td>
+</tr>
+<tr>
+<td>500 Seedlings</td>
+<td>2300</td>
+</tr>
+<tr>
+<td>1000 Seedlings</td>
+<td>4500</td>
+</tr>
+</table>
+</section>
+
+<!-- BULK CALCULATOR -->
+<section class="section">
+<h2>Bulk Order Calculator</h2>
+
+<input type="number" id="qty" placeholder="Enter number of seedlings">
+<button class="btn" onclick="calculate()">Calculate Price</button>
+
+<p id="result"></p>
+</section>
+
+<!-- MPESA -->
+<section class="section">
+<h2>M-Pesa Payment</h2>
 
 <div class="card">
-<h3>Tomato Seedlings</h3>
-<p>KES 15 per seedling</p>
-<a href="https://wa.me/254729526873?text=Hello%20Naivagreen,%20I%20would%20like%20to%20order%20Tomato%20Seedlings." class="btn">Order on WhatsApp</a>
-</div>
-
-<div class="card">
-<h3>Capsicum Seedlings</h3>
-<p>KES 18 per seedling</p>
-<a href="https://wa.me/254729526873?text=Hello%20Naivagreen,%20I%20would%20like%20to%20order%20Capsicum%20Seedlings." class="btn">Order on WhatsApp</a>
-</div>
-
-<div class="card">
-<h3>Tree Seedlings</h3>
-<p>KES 50 per seedling</p>
-<a href="https://wa.me/254729526873?text=Hello%20Naivagreen,%20I%20would%20like%20to%20order%20Tree%20Seedlings." class="btn">Order on WhatsApp</a>
-</div>
-
+<p><strong>Paybill:</strong> 123456</p>
+<p><strong>Account:</strong> Your Name / Order Number</p>
+<p>After payment, send confirmation via WhatsApp.</p>
+<a href="https://wa.me/254729526873" class="btn">Send Payment Confirmation</a>
 </div>
 </section>
 
-<section id="contact" class="section">
-<h2>Contact Us</h2>
+<!-- GALLERY -->
+<section class="section">
+<h2>Our Greenhouse</h2>
 
-<p><strong>Phone:</strong> +254 729 526 873</p>
-<p><strong>Location:</strong> Nyondia, Naivasha, Kenya</p>
-
-<iframe src="https://www.google.com/maps?q=Naivasha,Kenya&output=embed"></iframe>
-
+<div class="gallery">
+<img src="images/spinach-greenhouse-1.jpg">
+<img src="images/spinach-greenhouse-2.jpg">
+<img src="images/spinach-production.jpg">
+</div>
 </section>
 
-<a href="https://wa.me/254729526873" class="whatsapp">WA</a>
+<!-- GOOGLE MAP -->
+<section class="section">
+<h2>Visit Us</h2>
+
+<iframe 
+src="https://www.google.com/maps?q=Naivasha%20Kenya&output=embed"
+width="100%" 
+height="300" 
+style="border:0;">
+</iframe>
+</section>
 
 <footer>
-© 2026 Naivagreen Propagator Ltd | Nyondia, Naivasha, Kenya
+<p>© 2026 Naivagreen Propagator Ltd | WhatsApp Ordering Available</p>
 </footer>
+
+<script>
+// Slider
+let slides = document.querySelectorAll('.hero img');
+let current = 0;
+setInterval(() => {
+slides[current].classList.remove('active');
+current = (current + 1) % slides.length;
+slides[current].classList.add('active');
+}, 4000);
+
+// Calculator
+function calculate(){
+let qty = document.getElementById("qty").value;
+let price = qty * 5;
+document.getElementById("result").innerHTML = 
+"Estimated Total: KES " + price;
+}
+</script>
 
 </body>
 </html>
